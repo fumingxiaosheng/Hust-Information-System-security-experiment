@@ -1,0 +1,13 @@
+20:22:54.624686 recvmsg(4, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="/\0", iov_len=1024}], msg_iovlen=1, msg_control=[{cmsg_len=16, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, cmsg_data=[6]}], msg_controllen=16, msg_flags=0}, 0) = 2 <4.460489>
+20:22:59.086358 write(1, "uri = /\n", 8) = 8 <0.000105>
+20:22:59.086551 write(1, "mailsv client recieves a sockfd "..., 36) = 36 <0.000050>
+20:22:59.086649 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xf7fcaa68) = 2586210 <0.000748>
+20:22:59.088365 close(6)                = 0 <0.000012>
+20:22:59.088417 recvmsg(4, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="/\0", iov_len=1024}], msg_iovlen=1, msg_control=[{cmsg_len=16, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, cmsg_data=[6]}], msg_controllen=16, msg_flags=0}, 0) = 2 <5.776172>
+20:23:04.865025 write(1, "uri = /\n", 8) = 8 <0.000103>
+20:23:04.865211 write(1, "mailsv client recieves a sockfd "..., 36) = 36 <0.000041>
+20:23:04.865290 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xf7fcaa68) = 2586212 <0.001157>
+20:23:04.866485 close(6)                = 0 <0.000022>
+20:23:04.866541 recvmsg(4, {msg_namelen=0}, 0) = ? ERESTARTSYS (To be restarted if SA_RESTART is set) <3.926464>
+20:23:08.793768 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+20:23:08.794582 +++ killed by SIGINT +++

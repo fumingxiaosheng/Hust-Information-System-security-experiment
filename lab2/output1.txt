@@ -1,0 +1,21 @@
+20:33:42.422414 accept(3, 0xffffd2ac, [0->16]) = 4 <5.010645>
+20:33:47.433609 write(1, "Parent process client_sockfd = 4"..., 33) = 33 <0.000097>
+20:33:47.433784 write(1, "server: accepting a client from "..., 57) = 57 <0.000127>
+20:33:47.434075 write(1, "sending a socket to the client:\n", 32) = 32 <0.000055>
+20:33:47.434216 sendmsg(7, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="hello, world\n\0", iov_len=14}], msg_iovlen=1, msg_control=[{cmsg_len=16, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, cmsg_data=[4]}], msg_controllen=16, msg_flags=0}, 0) = 14 <0.000325>
+20:33:47.434632 close(4)                = 0 <0.000014>
+20:33:47.434690 accept(3, {sa_family=AF_INET, sin_port=htons(35368), sin_addr=inet_addr("127.0.0.1")}, [16]) = 4 <4.027027>
+20:33:51.461964 write(1, "Parent process client_sockfd = 4"..., 33) = 33 <0.000100>
+20:33:51.462123 write(1, "server: accepting a client from "..., 53) = 53 <0.000142>
+20:33:51.462311 write(1, "sending a socket to the client:\n", 32) = 32 <0.000051>
+20:33:51.462407 sendmsg(7, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="hello, world\n\0", iov_len=14}], msg_iovlen=1, msg_control=[{cmsg_len=16, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, cmsg_data=[4]}], msg_controllen=16, msg_flags=0}, 0) = 14 <0.000326>
+20:33:51.462787 close(4)                = 0 <0.000013>
+20:33:51.462841 accept(3, {sa_family=AF_INET, sin_port=htons(35370), sin_addr=inet_addr("127.0.0.1")}, [16]) = 4 <1.614205>
+20:33:53.077371 write(1, "Parent process client_sockfd = 4"..., 33) = 33 <0.000129>
+20:33:53.077586 write(1, "server: accepting a client from "..., 53) = 53 <0.000151>
+20:33:53.077805 write(1, "sending a socket to the client:\n", 32) = 32 <0.000116>
+20:33:53.078048 sendmsg(7, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="hello, world\n\0", iov_len=14}], msg_iovlen=1, msg_control=[{cmsg_len=16, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, cmsg_data=[4]}], msg_controllen=16, msg_flags=0}, 0) = 14 <0.000377>
+20:33:53.078501 close(4)                = 0 <0.000020>
+20:33:53.078581 accept(3, 0xffffd2ac, [16]) = ? ERESTARTSYS (To be restarted if SA_RESTART is set) <7.350993>
+20:34:00.430790 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+20:34:00.431729 +++ killed by SIGINT +++
